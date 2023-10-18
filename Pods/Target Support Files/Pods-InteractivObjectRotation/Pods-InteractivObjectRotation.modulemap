@@ -1,0 +1,6 @@
+framework module Pods_InteractivObjectRotation {
+  umbrella header "Pods-InteractivObjectRotation-umbrella.h"
+
+  export *
+  module * { export * }
+}
