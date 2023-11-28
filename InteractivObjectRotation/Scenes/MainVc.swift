@@ -1,10 +1,3 @@
-//
-//  ViewController.swift
-//  InteractivObjectRotation
-//
-//  Created by  user on 10.09.2023.
-//
-
 import UIKit
 
 final class MainVc: UIViewController {
@@ -51,6 +44,18 @@ private extension MainVc {
     func setupUI() {
         self.view.backgroundColor = UIColor.white
         self.navigationItem.title = Constants.navigationTitle
+        self.navigationController?.navigationBar.titleTextAttributes = [
+            NSAttributedString.Key.font: UIFont(
+                name: Constants.navTitleFont,
+                size: 20
+            )!
+        ]
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [
+            NSAttributedString.Key.font: UIFont(
+                name: Constants.navTitleFont,
+                size: 30
+            )!
+        ]
         self.navigationController?.navigationBar.prefersLargeTitles = true
         tableView.frame = self.view.bounds
         self.view.addSubview(tableView)
@@ -111,6 +116,7 @@ extension MainVc: UITableViewDataSource {
             for: indexPath
         )
         cell.textLabel?.text = rows[indexPath.row].title
+        cell.textLabel?.font = UIFont(name: Constants.cellTextFont, size: 16)
         cell.accessoryType = .disclosureIndicator
         cell.selectionStyle = .gray
         return cell
@@ -121,12 +127,14 @@ extension MainVc: UITableViewDataSource {
 
 private extension MainVc {
     enum Constants {
-      static let heightRow: CGFloat = 50
-      static let identifier: String = "MyCell"
-      static let title2DCell = "Interactive 2D logo"
-      static let title2DLayeredCell = "Interactive layered 2D logo"
-      static let title3DCell = "Interactive 3D logo"
-      static let navigationTitle = "Interactive logo"
+        static let heightRow: CGFloat = 50
+        static let identifier: String = "MyCell"
+        static let title2DCell = "Interactive 2D logo"
+        static let title2DLayeredCell = "Interactive layered 2D logo"
+        static let title3DCell = "Interactive 3D logo"
+        static let navigationTitle = "INTERACTIVE LOGO"
+        static let cellTextFont = "Montserrat-Regular"
+        static let navTitleFont = "Montserrat-Bold"
     }
 }
 

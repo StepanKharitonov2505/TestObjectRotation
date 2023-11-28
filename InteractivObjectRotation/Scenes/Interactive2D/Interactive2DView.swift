@@ -1,10 +1,3 @@
-//
-//  Interactive2DView.swift
-//  InteractivObjectRotation
-//
-//  Created by  user on 10.09.2023.
-//
-
 import UIKit
 import SnapKit
 
@@ -98,7 +91,10 @@ private extension Interactive2DView {
     }
 
     func setupGestureRecognizers() {
-        panGestureRecognizer.addTarget(self, action: #selector(handlePanGesture(_:)))
+        panGestureRecognizer.addTarget(
+            self,
+            action: #selector(handlePanGesture(_:))
+        )
 
         // To avoid bugs, we set the number of touches
 

@@ -1,10 +1,3 @@
-//
-//  SceneDelegate.swift
-//  InteractivObjectRotation
-//
-//  Created by  user on 10.09.2023.
-//
-
 import UIKit
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {

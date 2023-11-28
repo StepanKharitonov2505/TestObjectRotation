@@ -1,10 +1,3 @@
-//
-//  UIColor+Extension.swift
-//  InteractivObjectRotation
-//
-//  Created by  user on 10.09.2023.
-//
-
 import UIKit
 
 public extension UIColor {

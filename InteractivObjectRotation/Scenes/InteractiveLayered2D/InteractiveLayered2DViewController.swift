@@ -1,10 +1,3 @@
-//
-//  InteractiveLayered2DViewController.swift
-//  InteractivObjectRotation
-//
-//  Created by  user on 10.09.2023.
-//
-
 import UIKit
 
 final class Interactive2DLayeredViewController: UIViewController {

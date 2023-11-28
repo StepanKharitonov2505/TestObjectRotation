@@ -1,10 +1,3 @@
-//
-//  InteractiveLayered2DView.swift
-//  InteractivObjectRotation
-//
-//  Created by  user on 10.09.2023.
-//
-
 import UIKit
 import SnapKit
 
@@ -12,20 +5,20 @@ final class InteractiveLayered2DView: UIView {
 
     // MARK: - CATransform3DView
 
-    lazy var matrix: CATransform3D = {
+    private lazy var matrix: CATransform3D = {
         var transform3D = CATransform3DIdentity
         transform3D.m34 = Constants.perspective
         caTransform3DView.layer.sublayerTransform = transform3D
         return transform3D
     }()
     
-    var caTransform3DView = UIView()
+    private var caTransform3DView = UIView()
     
-    var layerLevel1 = CALayer()
-    var layerLevel2 = CALayer()
-    var layerLevel3 = CALayer()
+    private var layerLevel1 = CALayer()
+    private var layerLevel2 = CALayer()
+    private var layerLevel3 = CALayer()
     
-    var transformLayer = CATransformLayer()
+    private var transformLayer = CATransformLayer()
 
     // MARK: - Gesture Recognizers
     
@@ -126,7 +119,10 @@ private extension InteractiveLayered2DView {
     }
   
     func setupGestureRecognizers() {
-        panGestureRecognizer.addTarget(self, action: #selector(handlePanGesture(_:)))
+        panGestureRecognizer.addTarget(
+            self,
+            action: #selector(handlePanGesture(_:))
+        )
 
         // To avoid bugs, we set the number of touches
 

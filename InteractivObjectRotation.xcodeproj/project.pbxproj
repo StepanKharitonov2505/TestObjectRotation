@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		6BEF68C4801232D51375BA2C /* Pods_InteractivObjectRotation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D73778F358C39CDE80CFEB14 /* Pods_InteractivObjectRotation.framework */; };
+		CE61D5C92B16131A0018C441 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE61D5C62B16131A0018C441 /* Montserrat-Regular.ttf */; };
+		CE61D5CA2B16131A0018C441 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CE61D5C72B16131A0018C441 /* Montserrat-Bold.ttf */; };
 		CE6847FA2AADD7310060AE29 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6847F92AADD7310060AE29 /* AppDelegate.swift */; };
 		CE6847FC2AADD7310060AE29 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6847FB2AADD7310060AE29 /* SceneDelegate.swift */; };
 		CE6847FE2AADD7310060AE29 /* MainVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE6847FD2AADD7310060AE29 /* MainVc.swift */; };
@@ -20,10 +22,13 @@
 		CE68481D2AAE31EA0060AE29 /* Interactive2DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68481C2AAE31EA0060AE29 /* Interactive2DView.swift */; };
 		CE68481F2AAE35A30060AE29 /* InteractiveLayered2DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE68481E2AAE35A30060AE29 /* InteractiveLayered2DView.swift */; };
 		CE6848212AAE38180060AE29 /* SceneKitAssetCatalog.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = CE6848202AAE38180060AE29 /* SceneKitAssetCatalog.scnassets */; };
+		CEE775052B15D01E00E80D1C /* Interactive3DView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEE775042B15D01E00E80D1C /* Interactive3DView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2BFFCB1583C83333E76D8DDA /* Pods-InteractivObjectRotation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InteractivObjectRotation.release.xcconfig"; path = "Target Support Files/Pods-InteractivObjectRotation/Pods-InteractivObjectRotation.release.xcconfig"; sourceTree = "<group>"; };
+		CE61D5C62B16131A0018C441 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		CE61D5C72B16131A0018C441 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		CE6847F62AADD7310060AE29 /* InteractivObjectRotation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InteractivObjectRotation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE6847F92AADD7310060AE29 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE6847FB2AADD7310060AE29 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +43,7 @@
 		CE68481C2AAE31EA0060AE29 /* Interactive2DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactive2DView.swift; sourceTree = "<group>"; };
 		CE68481E2AAE35A30060AE29 /* InteractiveLayered2DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InteractiveLayered2DView.swift; sourceTree = "<group>"; };
 		CE6848202AAE38180060AE29 /* SceneKitAssetCatalog.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; name = SceneKitAssetCatalog.scnassets; path = InteractivObjectRotation/Scenes/InteractiveLayered2D/SceneKitAssetCatalog.scnassets; sourceTree = SOURCE_ROOT; };
+		CEE775042B15D01E00E80D1C /* Interactive3DView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactive3DView.swift; sourceTree = "<group>"; };
 		D50AE6B4569741DDCB99CCAD /* Pods-InteractivObjectRotation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InteractivObjectRotation.debug.xcconfig"; path = "Target Support Files/Pods-InteractivObjectRotation/Pods-InteractivObjectRotation.debug.xcconfig"; sourceTree = "<group>"; };
 		D73778F358C39CDE80CFEB14 /* Pods_InteractivObjectRotation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InteractivObjectRotation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -60,6 +66,15 @@
 				D73778F358C39CDE80CFEB14 /* Pods_InteractivObjectRotation.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CE61D5C52B1612DC0018C441 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CE61D5C72B16131A0018C441 /* Montserrat-Bold.ttf */,
+				CE61D5C62B16131A0018C441 /* Montserrat-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 		CE6847ED2AADD7310060AE29 = {
@@ -94,6 +109,7 @@
 		CE68480D2AADD95B0060AE29 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CE61D5C52B1612DC0018C441 /* Fonts */,
 				CE6848022AADD7320060AE29 /* Assets.xcassets */,
 				CE6848042AADD7320060AE29 /* LaunchScreen.storyboard */,
 			);
@@ -143,6 +159,7 @@
 			isa = PBXGroup;
 			children = (
 				CE6848172AADEB480060AE29 /* Interactive3DViewController.swift */,
+				CEE775042B15D01E00E80D1C /* Interactive3DView.swift */,
 				CE6848202AAE38180060AE29 /* SceneKitAssetCatalog.scnassets */,
 			);
 			path = Interactive3D;
@@ -195,7 +212,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1430;
-				LastUpgradeCheck = 1430;
+				LastUpgradeCheck = 1500;
 				TargetAttributes = {
 					CE6847F52AADD7310060AE29 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -225,6 +242,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE61D5CA2B16131A0018C441 /* Montserrat-Bold.ttf in Resources */,
+				CE61D5C92B16131A0018C441 /* Montserrat-Regular.ttf in Resources */,
 				CE6848062AADD7320060AE29 /* LaunchScreen.storyboard in Resources */,
 				CE6848032AADD7320060AE29 /* Assets.xcassets in Resources */,
 				CE6848212AAE38180060AE29 /* SceneKitAssetCatalog.scnassets in Resources */,
@@ -280,6 +299,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE775052B15D01E00E80D1C /* Interactive3DView.swift in Sources */,
 				CE68481B2AAE31A20060AE29 /* UIColor+Extension.swift in Sources */,
 				CE68481D2AAE31EA0060AE29 /* Interactive2DView.swift in Sources */,
 				CE6847FE2AADD7310060AE29 /* MainVc.swift in Sources */,
@@ -342,6 +362,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -402,6 +423,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
